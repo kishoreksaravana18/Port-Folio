@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Bodoni+Moda:wght@500;600&amp;family=Jost:ital,wght@0,400;1,700&amp;family=Oswald:wght@600&amp;family=UnifrakturCook:wght@700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Bodoni+Moda:wght@500;600&amp;family=Jost:wght@400&amp;family=UnifrakturCook:wght@700&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0}
 .theme{--bg:#FFFFFF;--bg2:#F5F5F7;--card:#FFFFFF;--label:#1D1D1F;--label2:#5E5E63;--sep:rgba(0,0,0,0.10);--fill:#E8E8ED;--glass:rgba(255,255,255,0.72);--glass-edge:rgba(255,255,255,0.9);--pending:#8A5300;--pending-bg:#FFF4E0}
@@ -28,18 +28,6 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .b-lv{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:0.22em}
 .b-balenciaga{font-family:'Inter',sans-serif;font-weight:800;letter-spacing:-0.02em;transform:scaleX(0.88);transform-origin:center}
 .b-ch{font-family:'UnifrakturCook',serif;font-weight:700}
-.b-supreme{font-family:'Jost',sans-serif;font-weight:700;font-style:italic;letter-spacing:-0.01em}
-.b-jordan{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.06em}
-.b-rolex{font-family:'Bodoni Moda',serif;font-weight:500;letter-spacing:0.22em}
-.c-orange{color:var(--brand-orange)}
-.c-blue{color:var(--accent)}
-.marquee{overflow:hidden;padding:6px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.marquee-inner{display:flex;width:max-content;animation:brand-roll 42s linear infinite}
-.marquee:hover .marquee-inner{animation-play-state:paused}
-.marquee-track{list-style:none;margin:0;padding:0 64px 0 0;display:flex;align-items:center;gap:64px;white-space:nowrap;line-height:1}
-.marquee .b-hermes{font-size:32px}.marquee .b-goyard{font-size:24px}.marquee .b-lv{font-size:21px}.marquee .b-balenciaga{font-size:29px}.marquee .b-ch{font-size:34px}.marquee .b-supreme{font-size:31px}.marquee .b-jordan{font-size:30px}.marquee .b-rolex{font-size:26px}
-@keyframes brand-roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion: reduce){.marquee-inner{animation:none}}
 .brand-rail{list-style:none;margin:0;flex:0 1 220px;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:28px;padding:8px 0 8px 32px;border-left:1px solid var(--sep)}
 @media (max-width: 820px){.brand-rail{flex:1 1 100%;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px 24px;padding:24px 0 0;border-left:0;border-top:1px solid var(--sep);order:-1}}
 
@@ -52,7 +40,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 html{scroll-behavior:smooth;background:var(--bg,#fff)}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 @media (max-width: 640px){.nav-links a:not(:last-child){display:none}
-.marquee .b-hermes{font-size:22px}.marquee .b-goyard{font-size:17px}.marquee .b-lv{font-size:15px}.marquee .b-balenciaga{font-size:20px}.marquee .b-ch{font-size:23px}.marquee .b-supreme{font-size:21px}.marquee .b-jordan{font-size:20px}.marquee .b-rolex{font-size:18px}.marquee-track{gap:36px;padding-right:36px}.sep-dot{display:none}}
+.sep-dot{display:none}}
 </style>
 </head>
 <body>
@@ -76,30 +64,18 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 
 
 <section style="padding: 104px 0 64px; display: flex; flex-direction: column; gap: 24px">
-<div class="marquee" style="margin-bottom: 16px">
-<div class="marquee-inner">
-<ul class="marquee-track" aria-label="Brands in the CLBXXIII catalog">
-<li class="b-hermes c-orange">HERMÈS</li><li class="b-supreme c-blue">SUPREME</li><li class="b-goyard c-orange">GOYARD</li><li class="b-jordan c-blue">JORDAN</li><li class="b-lv c-orange">LOUIS VUITTON</li><li class="b-rolex c-blue">ROLEX</li><li class="b-balenciaga c-orange">BALENCIAGA</li><li class="b-ch c-blue">Chrome Hearts</li>
-</ul>
-<ul class="marquee-track" aria-hidden="true">
-<li class="b-hermes c-orange">HERMÈS</li><li class="b-supreme c-blue">SUPREME</li><li class="b-goyard c-orange">GOYARD</li><li class="b-jordan c-blue">JORDAN</li><li class="b-lv c-orange">LOUIS VUITTON</li><li class="b-rolex c-blue">ROLEX</li><li class="b-balenciaga c-orange">BALENCIAGA</li><li class="b-ch c-blue">Chrome Hearts</li>
-</ul>
-</div>
-</div>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; font-size: 15px; color: var(--label2)">
 <span style="font-weight: 600; color: var(--label)">Senior Manager, E-commerce &amp; Marketing Technology</span>
 <span class="sep-dot" aria-hidden="true">·</span>
 <span>New Jersey</span>
 </div>
-<h1 style="margin: 0; font-size: clamp(40px, 6.4vw, 80px); line-height: 1.05; letter-spacing: -0.035em; font-weight: 700; max-width: 18ch">I turn browsers into buyers and first-time customers into repeat revenue through lifecycle marketing and automation.</h1>
-<p style="margin: 0; font-size: 19px; line-height: 1.55; color: var(--label2); max-width: 44em">E-commerce · MarTech · Lifecycle marketing · Acquisition · Automation · Measurement</p>
+<h1 style="margin: 0; font-size: clamp(40px, 6.4vw, 80px); line-height: 1.05; letter-spacing: -0.035em; font-weight: 700; max-width: 22ch">I run lifecycle and paid media for a luxury resale brand, and cut cost per purchase 41%.</h1>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
-<a href="mailto:KishoreSaravana@hotmail.com" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-size: 17px; font-weight: 600">Contact Kishore</a>
+<a href="mailto:KishoreSaravana@hotmail.com" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-size: 17px; font-weight: 600">Email me</a>
 <a href="assets/Kishore-S-Resume.pdf" download="Kishore-S-Resume.pdf" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: var(--bg2); color: var(--label); font-size: 17px; font-weight: 600">Download résumé
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"></path></svg></a>
 </div>
-</section><section id="impact" style="padding: 24px 0 0; display: flex; flex-direction: column; gap: 20px">
-<h2 style="margin: 0; font-size: 13px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Career impact</h2>
+</section><section id="impact" aria-label="Career impact" style="padding: 24px 0 0; display: flex; flex-direction: column; gap: 20px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px">
 <div style="padding: 28px; border-radius: 24px; background: var(--bg2); display: flex; flex-direction: column; gap: 10px">
 <span style="font-size: 52px; line-height: 1; font-weight: 700; letter-spacing: -0.035em; color: var(--accent)">421%</span>
@@ -143,7 +119,6 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px">
 <div style="display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em">Current role</span>
 <h3 style="margin: 0; font-size: 34px; letter-spacing: -0.025em; font-weight: 700">CLBXXIII</h3>
 <span style="font-size: 19px; font-weight: 500">Senior Manager, E-commerce &amp; Marketing Technology</span>
 </div>
@@ -154,27 +129,10 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 8px">
-<h4 style="margin: 0; font-size: 13px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Business scope</h4>
-<p style="margin: 0; font-size: 19px; line-height: 1.55; max-width: 48em">Luxury resale commerce across Hermès, Balenciaga, Goyard, Louis Vuitton and Chrome Hearts. Owns e-commerce, lifecycle marketing, acquisition, customer data, marketing technology and automation.</p>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; max-width: 48em">Luxury resale across Hermès, Balenciaga, Goyard, Louis Vuitton and Chrome Hearts. I own e‑commerce, lifecycle, acquisition, customer data and automation.</p>
 
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h4 style="margin: 0; font-size: 13px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Responsibilities</h4>
-<div style="display: flex; flex-wrap: wrap; gap: 8px">
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">Lifecycle strategy</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">Segmentation and retention</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">Google and Meta acquisition</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">Shopify customer and order data</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">Klaviyo journeys</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">n8n and API automation</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">Conversion instrumentation</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: var(--card); font-size: 15px">Commerce reporting</span>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h4 style="margin: 0; font-size: 13px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Actions and decisions</h4>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.5">
 <li>Integrated Shopify customer profiles and order history with Klaviyo to support sales-algorithm analysis.</li>
 <li>Built HTML templates, lead-scoring logic and dynamic event-passing code.</li>
@@ -183,8 +141,6 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 <li>Restructured the luxury-resale buyer journey by defining funnel stages and buyer-acquisition strategies.</li>
 </ul>
 </div>
-</div>
-</div>
 
 
 </div>
@@ -192,40 +148,33 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 
 
 <div style="display: flex; flex-direction: column; gap: 12px">
-<h4 style="margin: 0; font-size: 13px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Role-level results</h4>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1px; border-radius: 20px; overflow: hidden; background: var(--sep)">
-<div style="padding: 20px; background: var(--card); display: flex; flex-direction: column; gap: 4px"><span style="font-size: 28px; font-weight: 700; letter-spacing: -0.02em">421%</span><span style="font-size: 15px; color: var(--label2)">Revenue growth supported</span></div>
 <div style="padding: 20px; background: var(--card); display: flex; flex-direction: column; gap: 4px"><span style="font-size: 28px; font-weight: 700; letter-spacing: -0.02em">42%</span><span style="font-size: 15px; color: var(--label2)">Email open rate maintained</span></div>
 <div style="padding: 20px; background: var(--card); display: flex; flex-direction: column; gap: 4px"><span style="font-size: 28px; font-weight: 700; letter-spacing: -0.02em">+12%</span><span style="font-size: 15px; color: var(--label2)">Quarterly returning customers</span></div>
 <div style="padding: 20px; background: var(--card); display: flex; flex-direction: column; gap: 4px"><span style="font-size: 28px; font-weight: 700; letter-spacing: -0.02em">+7%</span><span style="font-size: 15px; color: var(--label2)">Store foot traffic</span></div>
 </div>
-<p style="margin: 0; font-size: 13px; color: var(--label2)">Role-level results. Project-specific results appear with each project below.</p>
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 16px">
-<h4 style="margin: 0; font-size: 13px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Projects</h4>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px">
 
 <a href="command-center.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 24px; background: var(--card); color: inherit; text-decoration: none">
 <div style="border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 10; background: #111113"><img src="assets/command-center-galleria-poster.jpg" alt="Command Center: a 3D view of the Galleria with live shoppers and a customer card" style="width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; display: block"></div>
-<span style="font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em">Case study</span>
 <span style="font-size: 22px; font-weight: 600; letter-spacing: -0.015em">Command Center</span>
-<span style="font-size: 15px; line-height: 1.5; color: var(--label2)">Connects customer behavior, product interest, marketing activity and store performance to the decisions teams make every day.</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--label2)">A live 3D view of the store floor that scores every shopper while they browse, so teams can act before they leave.</span>
 <span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 22px; font-weight: 700">$324 → $1,284</span><span style="font-size: 13px; color: var(--label2)">AOV in 60 days</span></span>
 <span style="display: inline-flex; align-items: center; gap: 4px; font-size: 15px; font-weight: 500; color: var(--accent)">Read the case study <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span>
 </a>
 
 <div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 24px; background: var(--card)">
 <a href="#media-dashboard" aria-label="See the buyer-journey dashboard screenshots" style="display: block; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 10; background: #23272E"><img src="assets/buyer-journey-timeline.png" alt="Buyer-journey timeline from the in-house dashboard" style="width: 100%; height: 100%; object-fit: cover; object-position: 0% 15%; display: block"></a>
-<span style="font-size: 12px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Project summary</span>
 <span style="font-size: 22px; font-weight: 600; letter-spacing: -0.015em">Buyer-journey and lead-scoring dashboard</span>
-<span style="font-size: 15px; line-height: 1.5; color: var(--label2)">Shopify has no native view of a buyer’s path across visits and channels. Built an in-house dashboard that shows each buyer’s full journey, scores leads, and puts orders from every sales channel in one view.</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--label2)">Shopify can’t show a buyer’s path across visits and channels. I built a dashboard that does, scores each lead, and puts orders from every sales channel in one view.</span>
 <span style="font-size: 13px; color: var(--label2)">Full case study coming soon</span>
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 24px; background: var(--card)">
 <a href="#media-lifecycle" aria-label="See the lifecycle flow screenshots" style="display: block; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 10; background: #F7F7F7; border: 1px solid var(--sep)"><img src="assets/klaviyo-cart-flow-overview.webp" alt="Klaviyo Add to Cart Abandonment flow, showing its branching conditional splits" style="width: 100%; height: 100%; object-fit: cover; object-position: 30% 0%; display: block"></a>
-<span style="font-size: 12px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Project summary</span>
 <span style="font-size: 22px; font-weight: 600; letter-spacing: -0.015em">Lifecycle and retention</span>
 <span style="font-size: 15px; line-height: 1.5; color: var(--label2)">Klaviyo lifecycle automations fed by Shopify profiles and order history through n8n and custom APIs, with multi-agent lead scoring to prioritize activity.</span>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding-top: 4px">
@@ -237,7 +186,6 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 
 <div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 24px; background: var(--card)">
 <a href="#media-paid" aria-label="See the Google Ads screenshots" style="display: block; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 10; background: #FFFFFF; border: 1px solid var(--sep)"><img src="assets/paid-ad-groups-trend.webp" alt="Google Ads ad group report for October 8 to 15, 2026, with impressions trend" style="width: 100%; height: 100%; object-fit: cover; object-position: 0% 0%; display: block"></a>
-<span style="font-size: 12px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Project summary</span>
 <span style="font-size: 22px; font-weight: 600; letter-spacing: -0.015em">Paid acquisition and buyer journey</span>
 <span style="font-size: 15px; line-height: 1.5; color: var(--label2)">Google and Meta campaigns for luxury resale buyers, redesigned funnel stages, revised creative, and dynamic landing pages with full conversion tracking, over a 60-day program.</span>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding-top: 4px">
@@ -251,7 +199,6 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 28px">
-<h4 style="margin: 0; font-size: 13px; font-weight: 600; color: var(--label2); text-transform: uppercase; letter-spacing: 0.06em">Project media</h4>
 
 <div id="media-dashboard" style="display: flex; flex-direction: column; gap: 14px">
 <span style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em">Buyer-journey and lead-scoring dashboard · Built in-house</span>
@@ -369,10 +316,7 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 </section>
 
 <section id="expertise" style="padding: 120px 0 0; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 8px">
 <h2 style="margin: 0; font-size: 48px; line-height: 1.1; letter-spacing: -0.03em; font-weight: 700">Expertise</h2>
-<p style="margin: 0; font-size: 19px; color: var(--label2)">Grouped by the business problem it solves.</p>
-</div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px">
 <div style="padding: 28px; border-radius: 24px; background: var(--bg2); display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-size: 20px; font-weight: 600">Acquisition and growth</h3><p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--label2)">Google Ads · Meta Ads · ChatGPT Ads · Paid search and PPC · SEO and answer-engine optimization · A/B testing · Landing-page and funnel strategy</p></div>
 <div style="padding: 28px; border-radius: 24px; background: var(--bg2); display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-size: 20px; font-weight: 600">Lifecycle and CRM</h3><p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--label2)">Klaviyo · Salesforce Marketing Cloud · Marketo · GoHighLevel · Segmentation, retention and repeat purchase</p></div>
@@ -403,22 +347,13 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 </div>
 </section>
 
-<section id="resume" style="margin-top: 120px; padding: 40px; border-radius: 32px; background: var(--bg2); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h2 style="margin: 0; font-size: 32px; letter-spacing: -0.02em; font-weight: 700">Résumé</h2>
-<p style="margin: 0; font-size: 17px; color: var(--label2)">The full history in one page, as a PDF.</p>
-</div>
-<a href="assets/Kishore-S-Resume.pdf" download="Kishore-S-Resume.pdf" style="display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-size: 17px; font-weight: 600">Download PDF
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"></path></svg></a>
-</section>
-
 <section id="contact" style="padding: 140px 0 120px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
-<h2 style="margin: 0; font-size: clamp(36px, 5.6vw, 64px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 700; max-width: 18ch">Let’s talk about your next growth challenge.</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.5; color: var(--label2); max-width: 34em">Contact Kishore about senior e-commerce, MarTech, growth, lifecycle, or digital transformation opportunities.</p>
+<h2 style="margin: 0; font-size: clamp(36px, 5.6vw, 64px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 700; max-width: 20ch">Hiring for e-commerce or MarTech? Write to me.</h2>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding-top: 8px">
 <a href="mailto:KishoreSaravana@hotmail.com" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-size: 17px; font-weight: 600">KishoreSaravana@hotmail.com</a>
 <a href="tel:+12018307688" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: var(--bg2); color: var(--label); font-size: 17px; font-weight: 600">201.830.7688</a>
 <a href="https://www.linkedin.com/in/kishore1kishore/" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: var(--bg2); color: var(--label); font-size: 17px; font-weight: 600">LinkedIn</a>
+<a href="assets/Kishore-S-Resume.pdf" download="Kishore-S-Resume.pdf" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: var(--bg2); color: var(--label); font-size: 17px; font-weight: 600">Résumé (PDF)</a>
 </div>
 </section>
 </main>
@@ -426,7 +361,7 @@ html{scroll-behavior:smooth;background:var(--bg,#fff)}
 <footer style="border-top: 1px solid var(--sep)">
 <div style="max-width: 1120px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: var(--label2)">
 <span>© 2026 Kishore S</span>
-<span>New Jersey · Last updated October 2026</span>
+<span>New Jersey · Last updated November 2026</span>
 </div>
 </footer>
 </div>
